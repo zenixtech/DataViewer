@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Professional User Data Viewer</h1>
+    </header>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody id="user-table"></tbody>
+      </table>
+
+      <div id="popup" class="popup">
+        <img id="user-image" alt="User Image" />
+        <h2 id="user-name">Full Name</h2>
+        <section>
+          <h3>Personal Information</h3>
+          <p><strong>Email:</strong> <span id="user-email"></span></p>
+          <p><strong>Phone:</strong> <span id="user-phone"></span></p>
+        </section>
+        <section>
+          <h3>Education</h3>
+          <p><strong>University:</strong> <span id="user-education"></span></p>
+        </section>
+        <section>
+          <h3>Company Details</h3>
+          <p><strong>Company:</strong> <span id="user-company"></span></p>
+          <p>
+            <strong>Years of Experience:</strong>
+            <span id="user-experience"></span>
+          </p>
+        </section>
+        <section>
+          <h3>Address</h3>
+          <p><span id="user-address"></span></p>
+        </section>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+  </body>
+</html>
